@@ -1,0 +1,14 @@
+Para crear directorio en el servidor Git es necesario los siguientes pasos
+primero crear un directorio con extension .git ejemplo test.git
+dentro del directorio ejecutar git init --bare
+
+desde el ordenador cliente clonar el directorio con git clone usedr@server:directorio.git 
+
+copiar los ficheros del proyecto dentro del directorio clonado y hacer un git add . , luego un git commit -m "texto inicial" , luego un git push y se copiaran todos los ficheros al servidor.
+
+los demas participantes deberan hacer un git clone usedr@server:directorio.git y recibiran todos los ficheros del proyecto.
+
+cuando se realizan cambios se deben añadir a la rama master mediante git add . (todos los ficheros) o en su defecto el nombre del fichero.
+
+Luego realizar el git commit -m "mensaje"
+
